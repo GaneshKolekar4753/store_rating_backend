@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logincontainer form {
+  width: 60%;
+}
+
+.navbarContainer {
+  height: 10vh;
+}
+.navbarContainer button {
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.main {
+  display: flex;
+}
+.sideBarContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0.2;
+  background-color: #f4f4f4;
+  height: 90vh;
+  padding-top: 15px;
+}
+.sideItem {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  padding: 10px 20px;
+}
+.sideItem:hover {
+  background-color: #f4edaf;
+  cursor: pointer;
+}
+
+.sideItem p {
+  font-size: 36px;
+  margin-left: 24px;
+  margin-right: 30%;
+}
+.displayContainer {
+  display: flex;
+  flex: 0.85;
+  height: 90vh;
+  border-radius: 10px;
+  background-color: aliceblue;
+  padding: 15px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.adminDashboard {
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemcard {
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.usersList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.searchRole {
+  display: flex;
+  width: 100%;
+}
+.rolesTableContainer {
+  width: 100%;
+}
+
+.rolesTableContainer table {
+  width: 100%;
+  border-spacing: 0 20px;
+}
+
+.rolesTableContainer th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+.rolesTableContainer tr {
+  background-color: #f2f2f2;
+}
+
+.rolesTableContainer th {
+  background-color: #fff8b7;
+}
+
+.storeDashboard {
+  gap: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.addContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  padding: 5%;
+}
+
+.inputesContainer{
+  display: flex;
+  gap: 2%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  gap: 10%;
+  justify-content: end;
+}
