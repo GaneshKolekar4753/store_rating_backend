@@ -4,7 +4,7 @@ const mongoose=require("mongoose");
 
 const connectDB=async()=>{
     try {
-        await mongoose.connect(`${process.env.MONGOURI}/store_db`);
+        await mongoose.connect(`${process.env.MONGOURI}store_db`);
         console.log("mongodb is connect successfully:roxiler_db");
     } catch (error) {
         console.log("Error in connecting db",error);
