@@ -9,7 +9,7 @@ const UsersList = (props) => {
   const currentRole = localStorage.getItem("userRole");
   const [users, setUsers] = useState([]);
   const getUsers = async () => {
-    const response = await fetch("http://localhost:7000/api/users/all", {
+    const response = await fetch("https://store-rating-app.onrender.com/api/users/all", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

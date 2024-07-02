@@ -8,7 +8,7 @@ const RatingList = ({storeId}) => {
   const currentRole=localStorage.getItem("currentRole");
   const getRatings = async () => {
     const response = await fetch(
-      `http://localhost:7000/api/ratings/${currentUser.id}`,
+      `https://store-rating-app.onrender.com/api/ratings/${currentUser.id}`,
       {
         method: "GET",
         headers: {
@@ -23,7 +23,7 @@ const RatingList = ({storeId}) => {
   };
   const getAllRatings = async () => {
     const response = await fetch(
-      `http://localhost:7000/api/ratings/store/${storeId}`,
+      `https://store-rating-app.onrender.com/api/ratings/store/${storeId}`,
       {
         method: "GET",
         headers: {

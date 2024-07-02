@@ -14,7 +14,7 @@ const StoreList = () => {
   const [stores, setStores] = useState([]);
   const [rating, setRating] = useState();
   const getStores = async () => {
-    const response = await fetch("http://localhost:7000/api/stores/", {
+    const response = await fetch("https://store-rating-app.onrender.com/api/stores/", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

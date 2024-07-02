@@ -11,7 +11,7 @@ export function StateProvider({children}) {
     const token = localStorage.getItem("authToken");
 
     const getStores = async () => {
-      const response = await fetch("http://localhost:7000/api/stores/", {
+      const response = await fetch("https://store-rating-app.onrender.com/api/stores/", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -24,7 +24,7 @@ export function StateProvider({children}) {
     };
     
     const getUsers = async () => {
-      const response = await fetch("http://localhost:7000/api/users/all", {
+      const response = await fetch("https://store-rating-app.onrender.com/api/users/all", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -34,7 +34,7 @@ export function StateProvider({children}) {
       setTotalUsers(data.length);
     };
     const getRatings = async () => {
-      const response = await fetch("http://localhost:7000/api/ratings/all", {
+      const response = await fetch("https://store-rating-app.onrender.com/api/ratings/all", {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

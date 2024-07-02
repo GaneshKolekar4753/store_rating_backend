@@ -9,7 +9,7 @@ const Login = () => {
   //create function to handle submit form
   const handleLogin = async (e) => {
     e.preventDefault();
-    const response = await fetch(`http://localhost:7000/api/users/login`, {
+    const response = await fetch(`https://store-rating-app.onrender.com/api/users/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -14,7 +14,7 @@ const Signup = () => {
   //create function to handle create user
   const handleRegister = async (e) => {
     e.preventDefault();
-    const response = await fetch(`http://localhost:7000/api/users/register`, {
+    const response = await fetch(`https://store-rating-app.onrender.com/api/users/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -17,7 +17,7 @@ const AddStore = () => {
 
   const handleSave = async (e) => {
     // console.log("currentUser",currentUser);
-    const response = await fetch(`http://localhost:7000/api/stores/addstore`, {
+    const response = await fetch(`https://store-rating-app.onrender.com/api/stores/addstore`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
